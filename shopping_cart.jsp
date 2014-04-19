@@ -13,7 +13,7 @@
 
 
 <!-- local stylesheet(s) -->
-<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/shopping_cart.css">
 </head>
 
 <body>
@@ -56,51 +56,9 @@
 </div>
 
 <div class="container">
-	<div class="jumbotron text-center" style="background-image:url(../images/webdev_banner.jpg); background-size: auto;">
-		<h1>AU BOUTIQUE</h1>
-		<h3>Auburn, AL</h3>
-	</div>
-</div>
+	
+    <!-- jsp code can be inserted here to populate the shopping cart page -->
 
-<div class="container">
-    
-    <div class="row">
-        
-        <div class="col-md-4"> 
-            <h3><a href="#">Featured Product</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
-
-        <div class="col-md-4">
-            <h3><a href="#">Featured Product 2</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
-
-        <div class="col-md-4">
-            <h3><a href="#">Featured Product 3</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
-    
-    </div>
-    
 </div>
 
 <!-- navigation footer -->
