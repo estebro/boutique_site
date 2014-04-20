@@ -1,3 +1,7 @@
+.navbar-brand {
+	font-family: 'walkway_oblique_boldregular';
+}
+
 .caption .row {
 	margin-right: 5px;
 }
@@ -13,4 +17,23 @@
 	margin-bottom: 8px;
 	margin-left: 2px;
 	margin-right: 2px;
+}
+
+.caption p {
+	height: 80px;
+}
+
+.row .form-control {
+	width: 40%;
+	min-width: 50px;
+}
+
+#submit_btn {
+	margin-top: 7px;
+	margin-bottom: 8px;
+
+}
+
+#body_content {
+	padding-bottom: 50px;
 }

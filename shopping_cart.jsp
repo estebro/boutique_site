@@ -18,12 +18,13 @@
 
 <body>
 
+
 <!-- top/fixed navigation bar -->
 <div class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">AU Boutique</a>
+		<a href="#" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -38,7 +39,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="index.jsp">Home</a></li>
 				<li><a href="product_gallery.jsp">Products</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="about_us.xml">About Us</a></li>
 
 				<!-- include 'search' within navbar -->
 				<li><form class="navbar-form navbar-left" role="search">
@@ -57,7 +58,78 @@
 
 <div class="container">
 	
-    <!-- jsp code can be inserted here to populate the shopping cart page -->
+<%
+	String req_item, temp;
+	int dresses[] = new int[6];
+	for (int i = 0; i < 6; i++) {
+		temp = "item0" + (i + 1);
+		req_item = request.getParameter(temp);
+
+		if (req_item != null && !req_item.equals("")) {
+			dresses[i] = Integer.parseInt(req_item);
+		} else {
+			dresses[i] = 0;
+		}
+	}
+%>
+
+<table class="table table-hover">
+
+	<tr>
+		<th>ITEM</th>
+		<th>UNIT PRICE</th>
+		<th>QUANTITY</th>
+		<th>SUBTOTAL</th>
+	</tr>
+
+	<tr>
+		<td>Xhilaration Junior's Knit Maxi Dress</td>
+		<td>$27.99</td>
+		<td><%= dresses[0]%></td>
+		<td>$<%= 27.99*dresses[0]%></td>
+	</tr>
+ 
+	<tr>
+		<td>Mossimo Supply Co. Junior's Lace Dress</td>
+		<td>$27.99</td>
+		<td><%= dresses[1]%></td>
+		<td>$<%= 27.99*dresses[1]%></td>
+	</tr>
+ 
+ 	<tr>
+ 		<td>Xhilaration Junior's Lace Top Dress</td>
+ 		<td>$24.99</td>
+ 		<td><%= dresses[2]%>
+ 		</td><td>$<%= 24.99*dresses[2]%></td>
+ 	</tr>
+
+ 	<tr>
+ 		<td>Xhilaration Junior's Strapless Faux Leather Maxi Dress &nbsp</td>
+ 		<td>$11.18</td>
+ 		<td><%= dresses[3]%></td>
+ 		<td>$<%= 11.18*dresses[3]%></td>
+ 	</tr>
+
+ 	<tr>
+ 		<td>Mossimo Supply Co. Junior's Lace Detail Dress</td>
+ 		<td>$19.99</td>
+ 		<td><%= dresses[4]%></td>
+ 		<td>$<%= 19.99*dresses[4]%></td>
+ 	</tr>
+
+ 	<tr>
+ 		<td>Xhilaration Junior's Smocked Top Dress</td>
+ 		<td>$24.99</td>
+ 		<td><%= dresses[5]%></td>
+ 		<td>$<%= 24.99*dresses[5]%></td></tr>
+
+ 	<tr>
+ 		<th colspan="2"></th>
+ 		<th>TOTAL</th>
+ 		<th>$<%= 27.99*dresses[0]+27.99*dresses[1]+24.99*dresses[2]+11.18*dresses[3]+19.99*dresses[4]+24.99*dresses[5]%></th>
+ 	</tr>
+
+</table>
 
 </div>
 

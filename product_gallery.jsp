@@ -23,7 +23,7 @@
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">AU Boutique</a>
+		<a href="#" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -38,7 +38,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="index.jsp">Home</a></li>
 				<li class="active"><a href="product_gallery.jsp">Products</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="about_us.xml">About Us</a></li>
 
 				<!-- include 'search' within navbar -->
 				<li><form class="navbar-form navbar-left" role="search">
@@ -55,149 +55,128 @@
 	</div>
 </div>
 
-<div class="container">
+<!-- grid view for all of the products -->
+<div class="container" id="body_content">
+	<form action="shopping_cart.jsp" method="GET">
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<!-- quickview of a dress -->
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress01.jpg">
+				<div class="caption">
+					<h3>Xhilaration Junior's Knit Maxi Dress </h3>
+					<p>
+					  <strong>Price: $27.99</strong><br/>
+					  Material: 70% Polyester, 30% Rayon. Neckline: Scoop. Sleeve Style: Sleeveless. Garment Length: Maxi.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item01" min="0" placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress02.jpg">
+				<div class="caption">
+					<h3>Mossimo Supply Co. Junior's Lace Dress</h3>
+					<p>
+					  <strong>Price: $27.99</strong><br/>
+					  Material: 90% Nylon, 10% Spandex. Neckline: U-Neck. Sleeve Style: Sleeveless. Garment Length: Above knee.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item02" min="0" placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress03.jpg">
+				<div class="caption">
+					<h3>Xhilaration Junior's Lace Top Dress </h3>
+					<p>
+					   <strong>Price: $24.99</strong><br/>
+					   Material: 100% Polyester. Neckline: Scoop. Sleeve Style: Sleeveless. Garment Length: Below knee.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item03" min="0" placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress04.jpg">
+				<div class="caption">
+					<h3>Xhilaration Junior's Strapless Faux Leather Maxi Dress </h3>
+					<p>
+						<strong>Price: $11.18</strong><br/>
+						Material: 100% Polyester. Neckline: Sweetheart. Sleeve Style: Strapless. Garment Length: Maxi.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item04" min="0" placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress05.jpg">
+				<div class="caption">
+					<h3>Mossimo Supply Co. Junior's Lace Detail Dress</h3>
+					<p>
+						<strong>Price: $19.99</strong><br/>
+						Material: 96% Cotton, 4% Spandex. Neckline: Scoop. Sleeve Style: Sleeveless. Garment Length: Above knee.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item05" min="0" placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
+		<div class="col-xs-6 col-md-4">
+			<div class="thumbnail">
+				<img src="images/dress06.jpg">
+				<div class="caption">
+					<h3>Xhilaration Junior's Smocked Top Dress </h3>
+					<p><strong>Price: $24.99</strong><br/>
+						Material: 100% Polyester. Neckline: Sweetheart. Sleeve Style: Sleeveless. Garment Length: Above knee.
+					</p>
+					<div class="row">
+	    				<input type="number" class="form-control pull-right" name="item06" min="0"placeholder="Quantity">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
-				</div>
+
+
+
+		<!-- navigation footer -->
+		<div class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container">
+
+				<!-- site author -->
+				<p class="navbar-text pull-left">Site built by Esteban Porres</p>
+
+				<input type="submit" class="btn btn-danger" id="submit_btn" value="Submit Order">
+
+				<!-- social media icons/links -->
+				<a href="http://instagram.com/"><img class="footer_icon pull-right" src="icons/64-instagram.png" alt="instagram_icon"></a> 
+			  	<a href="http://twitter.com/"><img class="footer_icon pull-right" src="icons/64-twitter.png" alt="twitter_icon"></a>
+			  	<a href="http://plus.google.com/"><img class="footer_icon pull-right" src="icons/64-googleplus.png" alt="googleplus_icon"></a>
+				<a href="http://facebook.com/"><img class="footer_icon pull-right" src="icons/64-facebook.png" alt="facebook_icon"></a>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	</form>
 
-	<div class="col-xs-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://fakeimg.pl/300x150/">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula.</p>
-				<div class="row">
-					<button href="#" type="button" class="btn pull-right">+</a>
-					<button href="#" type="button" class="btn pull-right">info</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-<!-- navigation footer -->
-<div class="navbar navbar-inverse navbar-fixed-bottom">
-	<div class="container">
-
-		<!-- site author -->
-		<p class="navbar-text pull-left">Site built by Esteban Porres</p>
-
-		<!-- social media icons/links -->
-		<a href="http://instagram.com/"><img class="footer_icon pull-right" src="icons/64-instagram.png" alt="instagram_icon"></a> 
-	  	<a href="http://twitter.com/"><img class="footer_icon pull-right" src="icons/64-twitter.png" alt="twitter_icon"></a>
-	  	<a href="http://plus.google.com/"><img class="footer_icon pull-right" src="icons/64-googleplus.png" alt="googleplus_icon"></a>
-		<a href="http://facebook.com/"><img class="footer_icon pull-right" src="icons/64-facebook.png" alt="facebook_icon"></a>
-	</div>
 </div>
 
 

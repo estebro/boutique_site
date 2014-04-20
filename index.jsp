@@ -11,7 +11,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-
 <!-- local stylesheet(s) -->
 <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -23,7 +22,7 @@
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">AU Boutique</a>
+		<a href="#" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -38,7 +37,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="index.jsp">Home</a></li>
 				<li><a href="product_gallery.jsp">Products</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="about_us.xml">About Us</a></li>
 
 				<!-- include 'search' within navbar -->
 				<li><form class="navbar-form navbar-left" role="search">
@@ -56,9 +55,9 @@
 </div>
 
 <div class="container">
-	<div class="jumbotron text-center" style="background-image:url(../images/webdev_banner.jpg); background-size: auto;">
-		<h1>AU BOUTIQUE</h1>
-		<h3>Auburn, AL</h3>
+	<div class="jumbotron text-center">
+		<h1>BOUTIQUE</h1>
+		<h2>Auburn, AL</h2>
 	</div>
 </div>
 

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="about_us.xsl" type="text/xsl"?>
+<!-- XML Project XML -->
+
+<developers>
+	<developer>
+		<name>Esteban Porres</name>
+		<nickName>Estebro</nickName>
+		<major>Computer Engineering</major>
+		<email>emp0013@auburn.edu</email>
+		<dressSize>XXS</dressSize>
+	</developer>
+	<developer>
+		<name>Mary Kate Barriault</name>
+		<nickName>Bear</nickName>
+		<major>Industrial and Systems Engineering</major>
+		<email>mkb0020@auburn.edu</email>
+		<dressSize>3</dressSize>
+	</developer>
+	<developer>
+		<name>Jason Olson</name>
+		<nickName>Jack Rabbit</nickName>
+		<major>Industrial and Systems Engineering</major>
+		<email>jmo0005@auburn.edu</email>
+		<dressSize>13</dressSize>
+	</developer>
+</developers>

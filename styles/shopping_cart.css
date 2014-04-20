@@ -1,3 +1,11 @@
+.navbar-brand {
+	font-family: 'walkway_oblique_boldregular';
+}
+
+th, td {
+	text-align: center;
+}
+
 .footer_icon {
 	width: 35px;
 	height: 35px;
