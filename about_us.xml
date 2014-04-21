@@ -4,6 +4,7 @@
 
 <developers>
 	<developer>
+		<imageId>images/ece.jpg</imageId>
 		<name>Esteban Porres</name>
 		<nickName>Estebro</nickName>
 		<major>Computer Engineering</major>
@@ -11,6 +12,7 @@
 		<dressSize>XXS</dressSize>
 	</developer>
 	<developer>
+		<imageId>images/industrial01.jpg</imageId>
 		<name>Mary Kate Barriault</name>
 		<nickName>Bear</nickName>
 		<major>Industrial and Systems Engineering</major>
@@ -18,6 +20,7 @@
 		<dressSize>3</dressSize>
 	</developer>
 	<developer>
+		<imageId>images/industrial02.jpg</imageId>
 		<name>Jason Olson</name>
 		<nickName>Jack Rabbit</nickName>
 		<major>Industrial and Systems Engineering</major>

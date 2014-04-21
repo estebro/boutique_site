@@ -5,7 +5,7 @@
 <html>
 
 <head>
-<title>AU Boutique</title>
+<title>COMP_5000</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"/>
@@ -26,7 +26,7 @@
     <div class="container">
 
         <!-- brand name/image -->
-        <a href="#" class="navbar-brand">BOUTIQUE</a>
+        <a href="index.jsp" class="navbar-brand">BOUTIQUE</a>
 
         <!-- creates icon for mobile navbar -->
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -60,30 +60,33 @@
 
 <div class="container">
 
-    <h2>Page Developers</h2>
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h2 class="panel-title">Site Developers</h2>
+        </div>
 
-    <table class="table table-hover">
+        <div class="panel-body">
 
-        <tr>
-            <th>Name</th>
-            <th>Nickname</th>
-            <th>Major</th>
-            <th>Email</th>
-            <th>Dress Size</th>
-        </tr>
+            <xsl:for-each select="developers/developer">
+                <div class="col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        <img src="{imageId}"/>
+                        <!-- <img src="images/engineering.png"/> -->
+                        <div class="caption">
+                            <h3><xsl:value-of select="name"/></h3>
+                            <p>
+                                <strong>NICKNAME </strong><xsl:value-of select="nickName"/><br/>
+                                <strong>MAJOR </strong><xsl:value-of select="major"/><br/>
+                                <strong>EMAIL </strong><xsl:value-of select="email"/><br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </xsl:for-each>
 
-        <xsl:for-each select="developers/developer">
-            <tr>
-                <td><xsl:value-of select="name"/></td>
-                <td><xsl:value-of select="nickName"/></td>
-                <td><xsl:value-of select="major"/></td>
-                <td><xsl:value-of select="email"/></td>
-                <td><xsl:value-of select="dressSize"/></td>
-            </tr>
-        </xsl:for-each>
-
-    </table>
-
+        </div>
+    </div>
 </div>
 
 <!-- navigation footer -->

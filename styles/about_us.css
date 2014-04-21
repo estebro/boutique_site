@@ -2,8 +2,22 @@
 	font-family: 'walkway_oblique_boldregular';
 }
 
+.nav {
+	font-family: 'cantarellbold';
+}
+
 th, td {
 	text-align: center;
+}
+
+.thumbnail img {
+	width: 300px;
+	height: 150px;
+}
+
+.caption {
+	margin-left: 20px;
+	margin-right: 10px;
 }
 
 .footer_icon {

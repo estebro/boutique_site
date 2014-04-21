@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>AU Boutique</title>
+<title>COMP_5000</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
@@ -23,7 +23,7 @@
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">BOUTIQUE</a>
+		<a href="index.jsp" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -57,7 +57,7 @@
 
 <!-- grid view for all of the products -->
 <div class="container" id="body_content">
-	<form action="shopping_cart.jsp" method="GET">
+	<form action="shopping_cart.jsp" method="POST">
 
 		<!-- quickview of a dress -->
 		<div class="col-xs-6 col-md-4">

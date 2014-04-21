@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>AU Boutique</title>
+<title>COMP_5000</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
@@ -17,14 +17,14 @@
 </head>
 
 <body>
-
+<%@ page import="java.math.*" %>
 
 <!-- top/fixed navigation bar -->
 <div class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">BOUTIQUE</a>
+		<a href="index.jsp" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -73,63 +73,76 @@
 	}
 %>
 
-<table class="table table-hover">
+<div class="panel panel-default">
+	
+	<div class="panel-heading">
+		<h3 class="panel-title">Order Summary</h3>
+	</div>
 
-	<tr>
-		<th>ITEM</th>
-		<th>UNIT PRICE</th>
-		<th>QUANTITY</th>
-		<th>SUBTOTAL</th>
-	</tr>
+	<div class="panel-body">
 
-	<tr>
-		<td>Xhilaration Junior's Knit Maxi Dress</td>
-		<td>$27.99</td>
-		<td><%= dresses[0]%></td>
-		<td>$<%= 27.99*dresses[0]%></td>
-	</tr>
- 
-	<tr>
-		<td>Mossimo Supply Co. Junior's Lace Dress</td>
-		<td>$27.99</td>
-		<td><%= dresses[1]%></td>
-		<td>$<%= 27.99*dresses[1]%></td>
-	</tr>
- 
- 	<tr>
- 		<td>Xhilaration Junior's Lace Top Dress</td>
- 		<td>$24.99</td>
- 		<td><%= dresses[2]%>
- 		</td><td>$<%= 24.99*dresses[2]%></td>
- 	</tr>
+		<table class="table table-hover">
 
- 	<tr>
- 		<td>Xhilaration Junior's Strapless Faux Leather Maxi Dress &nbsp</td>
- 		<td>$11.18</td>
- 		<td><%= dresses[3]%></td>
- 		<td>$<%= 11.18*dresses[3]%></td>
- 	</tr>
+			<tr>
+				<th>ITEM</th>
+				<th>UNIT PRICE</th>
+				<th>QUANTITY</th>
+				<th>SUBTOTAL</th>
+			</tr>
 
- 	<tr>
- 		<td>Mossimo Supply Co. Junior's Lace Detail Dress</td>
- 		<td>$19.99</td>
- 		<td><%= dresses[4]%></td>
- 		<td>$<%= 19.99*dresses[4]%></td>
- 	</tr>
+			<tr>
+				<td>Xhilaration Junior's Knit Maxi Dress</td>
+				<td>$27.99</td>
+				<td><%= dresses[0]%></td>
+				<td>$<%= BigDecimal.valueOf(27.99*dresses[0]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td>
+			</tr>
+		 
+			<tr>
+				<td>Mossimo Supply Co. Junior's Lace Dress</td>
+				<td>$27.99</td>
+				<td><%= dresses[1]%></td>
+				<td>$<%= BigDecimal.valueOf(27.99*dresses[1]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td>
+			</tr>
+		 
+		 	<tr>
+		 		<td>Xhilaration Junior's Lace Top Dress</td>
+		 		<td>$24.99</td>
+		 		<td><%= dresses[2]%>
+		 		</td><td>$<%= BigDecimal.valueOf(24.99*dresses[2]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td>
+		 	</tr>
 
- 	<tr>
- 		<td>Xhilaration Junior's Smocked Top Dress</td>
- 		<td>$24.99</td>
- 		<td><%= dresses[5]%></td>
- 		<td>$<%= 24.99*dresses[5]%></td></tr>
+		 	<tr>
+		 		<td>Xhilaration Junior's Strapless Faux Leather Maxi Dress</td>
+		 		<td>$11.18</td>
+		 		<td><%= dresses[3]%></td>
+		 		<td>$<%= BigDecimal.valueOf(11.18*dresses[3]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td>
+		 	</tr>
 
- 	<tr>
- 		<th colspan="2"></th>
- 		<th>TOTAL</th>
- 		<th>$<%= 27.99*dresses[0]+27.99*dresses[1]+24.99*dresses[2]+11.18*dresses[3]+19.99*dresses[4]+24.99*dresses[5]%></th>
- 	</tr>
+		 	<tr>
+		 		<td>Mossimo Supply Co. Junior's Lace Detail Dress</td>
+		 		<td>$19.99</td>
+		 		<td><%= dresses[4]%></td>
+		 		<td>$<%= BigDecimal.valueOf(19.99*dresses[4]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td>
+		 	</tr>
 
-</table>
+		 	<tr>
+		 		<td>Xhilaration Junior's Smocked Top Dress</td>
+		 		<td>$24.99</td>
+		 		<td><%= dresses[5]%></td>
+		 		<td>$<%= BigDecimal.valueOf(24.99*dresses[5]).setScale(2,BigDecimal.ROUND_HALF_UP)%></td></tr>
+
+		 	<tr>
+		 		<th colspan="2"></th>
+		 		<th>TOTAL</th>
+		 		<th>$<%= BigDecimal.valueOf(27.99*dresses[0]+27.99*dresses[1]+24.99*dresses[2]+11.18*dresses[3]+19.99*dresses[4]+24.99*dresses[5]).setScale(2,BigDecimal.ROUND_HALF_UP)%></th>
+		 	</tr>
+
+		</table>
+
+	</div>
+
+</div>
+
 
 </div>
 

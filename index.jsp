@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>AU Boutique</title>
+<title>COMP_5000</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
@@ -22,7 +22,7 @@
 	<div class="container">
 
 		<!-- brand name/image -->
-		<a href="#" class="navbar-brand">BOUTIQUE</a>
+		<a href="index.jsp" class="navbar-brand">BOUTIQUE</a>
 
 		<!-- creates icon for mobile navbar -->
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -65,38 +65,39 @@
     
     <div class="row">
         
-        <div class="col-md-4"> 
-            <h3><a href="#">Featured Product</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
+        <!-- preview of the products -->
+        <a href="product_gallery.jsp">
+			<div class="col-xs-6 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Knit Maxi Dress </h3>
+					</div>
+					<img src="images/dress01.jpg">
+				</div>
+			</div>
+		</a>
 
-        <div class="col-md-4">
-            <h3><a href="#">Featured Product 2</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
+		<a href="product_gallery.jsp">
+	        <div class="col-xs-6 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Lace Detail Dress</h3>
+					</div>
+					<img src="images/dress05.jpg">
+				</div>
+			</div>
+		</a>
 
-        <div class="col-md-4">
-            <h3><a href="#">Featured Product 3</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-default">Read More</a>
-        </div>
+		<a href="product_gallery.jsp">
+	        <div class="col-xs-6 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Lace Top Dress</h3>
+					</div>
+					<img src="images/dress03.jpg">
+				</div>
+			</div>
+		</a>
     
     </div>
     

@@ -2,6 +2,10 @@
 	font-family: 'walkway_oblique_boldregular';
 }
 
+.nav {
+	font-family: 'cantarellbold';
+}
+
 .caption .row {
 	margin-right: 5px;
 }
@@ -31,6 +35,8 @@
 #submit_btn {
 	margin-top: 7px;
 	margin-bottom: 8px;
+	width: 30%;
+	margin-left: 15%;
 
 }
 

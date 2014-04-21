@@ -2,6 +2,10 @@
 	font-family: 'walkway_oblique_boldregular';
 }
 
+.nav {
+	font-family: 'cantarellbold';
+}
+
 th, td {
 	text-align: center;
 }
